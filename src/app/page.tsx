@@ -1,6 +1,6 @@
 import Card from "./components/Card";
 import Navbar from "./components/Navbar";
-import info from "./info"
+import info from "./info";
 
 export default function Home() {
   
