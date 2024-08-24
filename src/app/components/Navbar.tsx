@@ -1,7 +1,15 @@
 export default function Navbar(){
     return(
-        <div>
-            This is nav components
-        </div>
+        <nav>
+            <img 
+                src="" 
+                alt=""
+                />
+            <h1>STARTDEE</h1>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+            </ul>
+        </nav>
     )
 }
