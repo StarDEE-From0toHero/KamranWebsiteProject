@@ -66,4 +66,4 @@ const users: User[] = [
     }
 ]
 
-export default users
+export default users ;

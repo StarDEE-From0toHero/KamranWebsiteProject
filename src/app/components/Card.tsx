@@ -27,15 +27,6 @@ export default function Card({ image, name, role, linkedIn, email }: Props) {
             alt={`${name}'s linkedIn.`}
           />
         </a>
-      
-        {/* <a href={email} target="_blank" title="gmail icons">
-            <img
-              className="max-w-6"
-              src="./image/gmail.png"
-              alt={`${name}'s gmail`}
-            />
-        </a> */}
-        
       </div>
     </div>
   );
