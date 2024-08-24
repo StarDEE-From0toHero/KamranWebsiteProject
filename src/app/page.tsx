@@ -5,7 +5,14 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <Card name="Chitipat Chanasuek" />
+      {
+        info.map((data) => (
+          <Card 
+            key={data.id}
+            {...data}
+          />
+        ))
+      }
     </main>
   );
-}
+};
