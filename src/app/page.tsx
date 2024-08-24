@@ -1,5 +1,5 @@
-import Navbar from "./components/Navbar/page"
-import Card from "./components/Card/page"
+import Card from "./components/Card";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
@@ -7,5 +7,5 @@ export default function Home() {
       <Navbar />
       <Card />
     </main>
-  )
+  );
 }
