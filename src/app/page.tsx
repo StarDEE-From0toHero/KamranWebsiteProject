@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
+      <div className="grid grid-cols-3">
       {
         info.map((data) => (
           <Card 
@@ -14,6 +15,8 @@ export default function Home() {
           />
         ))
       }
+      </div>
+      
     </main>
   );
 };
