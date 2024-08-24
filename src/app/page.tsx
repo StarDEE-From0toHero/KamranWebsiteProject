@@ -1,3 +1,11 @@
+import Card from "./components/Card";
+import Navbar from "./components/Navbar";
+
 export default function Home() {
-  return <main>Hello Kamran</main>;
+  return (
+    <main>
+      <Navbar />
+      <Card />
+    </main>
+  );
 }
