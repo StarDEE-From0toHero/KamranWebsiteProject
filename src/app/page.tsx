@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <Card />
+      <Card name="Chitipat Chanasuek" />
     </main>
   );
 }
