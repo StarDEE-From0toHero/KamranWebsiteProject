@@ -1,27 +1,41 @@
 interface Props {
   image?: string;
-  altText?: string;
   name?: string;
   role?: string;
   linkedIn?: string;
   email?: string
 }
 
-export default function Card({ image, altText, name, role, linkedIn, email }: Props) {
+export default function Card({ image, name, role, linkedIn, email }: Props) {
   return (
-    <div className="card bg-base-100 w-96 shadow-xl">
+    <div>
       <figure>
-        <img src={image} alt={altText} />
+        <img 
+          src={`./image/${image}`} 
+          alt={`Picture of ${name}.`}
+        />
       </figure>
-      <div className="card-body">
-        <h1 className="card-title">{name}</h1>
-        <h4 className="card-role">{role}</h4>
-      
-        <div className="card-actions justify-end"></div>
+      <div>
+        <h1>{name}</h1>
+        <h4>{role}</h4>
       </div>
-      <div className="card-contact">
-        <img src={linkedIn} alt="" />
-        <img src={email} alt="" />
+      <div>
+        <a href={linkedIn} target="_blank" title="linkedin icons">
+          <img 
+            className="max-w-6" 
+            src="./image/linkedin.png" 
+            alt={`${name}'s linkedIn.`}
+          />
+        </a>
+      
+        {/* <a href={email} target="_blank" title="gmail icons">
+            <img
+              className="max-w-6"
+              src="./image/gmail.png"
+              alt={`${name}'s gmail`}
+            />
+        </a> */}
+        
       </div>
     </div>
   );
