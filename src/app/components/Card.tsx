@@ -1,40 +1,41 @@
 interface Props {
   image?: string;
-  name?: string;
+  firstName?: string;
+  lastName?: string;
   role?: string;
   linkedIn?: string;
   email?: string
 }
 
-export default function Card({ image, name, role, linkedIn, email }: Props) {
+export default function Card({ image, firstName, lastName, role, linkedIn, email }: Props) {
   return (
-    <div>
-      <figure>
-        <img 
+    <div className="box-border overflow-hidden">
+      <img 
           src={`./image/${image}`} 
-          alt={`${name}'s picture.`}
-          className="max-w-30"
+          alt={`${firstName}'s picture.`}
+          className="border border-black border-2 w-36 h-36 object-cover rounded-full float-start mr-6"
         />
-      </figure>
-      <div className="card-body">
-        <h1 className="card-title">{name}</h1>
-        <h4 className="card-role">{role}</h4>
-      </div>
-      <div className="card-contact">
-        <a href={linkedIn} target="_blank">
-          <img 
-            src="./image/linkedin.png" 
-            alt="linkedin icon." 
-            className="max-w-6"
-          />
-        </a>
-        <div className="flex flex-row">
-          <img 
-            src="./image/gmail.png" 
-            alt="gmail icon."
-            className="max-w-6"
-          />
-          <p>{email}</p>
+      <div className="border border-black h-36 w-385 rounded-full">  
+        <div>
+          <h1 className="text-xl font-bold">{firstName}</h1>
+          <h1 className="text-xl font-bold">{lastName}</h1>
+          <h4 className="font-bold">{role}</h4>
+          <div className="flex flex-row">
+            <img 
+              src="./image/gmail.png" 
+              alt="gmail icon."
+              className="w-6 mr-4"
+            />
+            <p>{email}</p>
+          </div>
+          <a href={linkedIn} target="_blank">
+            <img 
+              src="./image/linkedin.png" 
+              alt="linkedin icon." 
+              className="w-6"
+            />
+          </a>
+          
         </div>
       </div>
     </div>
