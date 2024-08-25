@@ -4,7 +4,6 @@ interface Props {
   lastName?: string;
   role?: string;
   linkedIn?: string;
-  email?: string;
 }
 
 export default function Card({
@@ -13,14 +12,13 @@ export default function Card({
   lastName,
   role,
   linkedIn,
-  email,
 }: Props) {
   return (
     <div className="box-border overflow-hidden">
       <img
         src={`./image/${image}`}
         alt={`${firstName}'s picture.`}
-        className="border border-black border-2 w-36 h-36 object-cover rounded-full float-start mr-6"
+        className=" border-black border-2 w-36 h-36 object-cover rounded-full float-start mr-6"
       />
       <div className="border border-black h-36 w-385 rounded-full py-2.5">
         <div>
