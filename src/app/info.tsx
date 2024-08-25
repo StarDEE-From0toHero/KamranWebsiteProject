@@ -1,6 +1,7 @@
 interface User {
     id:number
-    name:string
+    firstName:string
+    lastName:string
     role:string
     image:string
     linkedIn:string
@@ -10,7 +11,8 @@ interface User {
 const users: User[] = [
     {
         id:1,
-        name: "Nattanat Lertariyamaythee",
+        firstName: "Nattanat",
+        lastName:"Lertariyamaythee",
         role:"Front-End Developer",
         image:"Aomsub.JPG",
         linkedIn:"https://www.linkedin.com/in/nattanat-lertariyamaythee-7555b2311/",
@@ -18,7 +20,8 @@ const users: User[] = [
     },
     {
         id:2,
-        name: "Jeeranan Tabudda",
+        firstName: "Jeeranan",
+        lastName:"Tabudda",
         role:"Designer",
         image:"Amp.JPG",
         linkedIn:"https://www.linkedin.com/in/jeeranan-tabudda-78228227b/",
@@ -26,23 +29,26 @@ const users: User[] = [
     },
     {
         id:3,
-        name: "Akarapong Thammawong",
-        role:"Management",
+        firstName: "Akarapong",
+        lastName:"Thammawong",
+        role:"Prooject Managemer",
         image:"Drake.JPG",
         linkedIn:"https://www.linkedin.com/in/akarapongthammawong/",
         email:"akarapong00123@gmail.com"
     },
     {
         id:4,
-        name: "Gun",
+        firstName: "Panus",
+        lastName:"Sakulsak",
         role:"Designer",
         image:"Gun.JPG",
-        linkedIn:"",
-        email:""
+        linkedIn:"https://www.linkedin.com/in/panus-sakulsak-217b66307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        email:"panus.gun@gmail.com"
     },
     {
         id:5,
-        name: "Chitipat Chanasuek",
+        firstName: "Chitipat",
+        lastName:"Chanasuek",
         role:"Front-End Developer",
         image:"Palm.JPG",
         linkedIn:"https://www.linkedin.com/in/chitipat-chanasuek-4198652a0",
@@ -50,7 +56,8 @@ const users: User[] = [
     },
     {
         id:6,
-        name: "Worapat Hongsetong",
+        firstName: "Worapat",
+        lastName:"Hongsetong",
         role:"Designer",
         image:"Eng.JPG",
         linkedIn:"https://www.linkedin.com/in/worapat-hongsetong-262638318/",
@@ -58,7 +65,8 @@ const users: User[] = [
     },
     {
         id:7,
-        name: "Narawit Piguntong",
+        firstName: "Narawit",
+        lastName:"Piguntong",
         role:"Designer",
         image:"Champ.JPG",
         linkedIn:"https://www.linkedin.com/in/champ-narawit-piguntong-921988318/",
