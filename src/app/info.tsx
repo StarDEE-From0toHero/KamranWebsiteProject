@@ -29,8 +29,8 @@ const users: User[] = [
         name: "Akarapong Thammawong",
         role:"Management",
         image:"Drake.JPG",
-        linkedIn:"",
-        email:""
+        linkedIn:"https://www.linkedin.com/in/akarapongthammawong/",
+        email:"akarapong00123@gmail.com"
     },
     {
         id:4,
