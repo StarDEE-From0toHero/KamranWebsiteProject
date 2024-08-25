@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-[#28335B]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,28 +24,29 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Item 1</a>
+              <a>Home</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a>Mission</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>Crew</a>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <img src="./image/favicon.svg"></img>
+        <a className="btn btn-ghost text-xl">StarDEE</a>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
+            <a>Home</a>
           </li>
           <li>
-            <a>Item 2</a>
+            <a>Mission</a>
           </li>
           <li>
-            <a>Item 3</a>
+            <a>Crew</a>
           </li>
         </ul>
       </div>
