@@ -14,7 +14,10 @@ export default function Card({
   linkedIn,
 }: Props) {
   return (
-    <div className="box-border overflow-hidden drop-shadow-lg text-[#28335B]">
+    <div
+      id="crew"
+      className="box-border overflow-hidden drop-shadow-lg text-[#28335B]"
+    >
       <img
         src={`./image/${image}`}
         alt={`${firstName}'s picture.`}

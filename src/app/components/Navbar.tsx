@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="navbar h-[60px] bg-[#28335B]">
+    <nav className="navbar h-[60px] bg-[#28335B]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,13 +24,13 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
               <a>Mission</a>
             </li>
             <li>
-              <a>Crew</a>
+              <a href="#crew">Crew</a>
             </li>
           </ul>
         </div>
@@ -42,16 +42,16 @@ export default function Navbar() {
       <div className="navbar-end hidden lg:flex text-white font-bold ">
         <ul className="menu menu-horizontal px-5 gap-x-10 text-base">
           <li>
-            <a>Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
             <a>Mission</a>
           </li>
           <li>
-            <a>Crew</a>
+            <a href="#crew">Crew</a>
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }
