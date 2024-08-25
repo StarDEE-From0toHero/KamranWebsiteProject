@@ -4,7 +4,6 @@ interface Props {
   lastName?: string;
   role?: string;
   linkedIn?: string;
-  email?: string;
 }
 
 export default function Card({
@@ -13,7 +12,6 @@ export default function Card({
   lastName,
   role,
   linkedIn,
-  email,
 }: Props) {
   return (
     <div className="box-border overflow-hidden drop-shadow-lg text-[#28335B]">
